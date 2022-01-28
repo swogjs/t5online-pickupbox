@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: blue;
+    height: 100vh;
+}
+.wrapper header {
+    background-color: green;
+    height: 80px;
+    overflow: hidden;
+}
+.wrapper main {
+    background-color: yellow;
+    height: calc(100vh - 80px);
+}
+
+.cell-rows {
+    height: 33.33333%;
+    background-color: red;
+    
+    display: flex;         
+    flex: 1 1 1 1;
+    justify-content: center; 
+    align-items: center;   
+}
+.cell-rows:first-child {
+    background-color: blue;
+}
+.cell-rows:last-child {
+    background-color: yellow;
+}
+
+.cell {
+    background: #454954;
+    height: 100%;
+    width: 25%;
+    padding: 10px;
+}
+
+.cell .cell-layout {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.cell .cell-layout .no-bg {
+    position: absolute;
+    top: -40px; left: -40px;
+    width: 120px;
+    height: 120px;
+    background-color: #454954;
+    border-radius: 120px;
+    z-index: 100;
+}
+.cell.on .no-bg {
+    background-color: #a0549f;
+}
+
+.cell .cell-layout .no {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 40px;
+    color: #fff;
+    z-index: 101;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell .order-no {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 120px;
+}
+
+.cell .status {
+    text-align: center;
+}
+
+.cell .icon-time {
+    padding-top: 50px;
+    display: inline-block;
+    background: url(../img/icon-box.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 90px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.cell .icon-lock {
+    margin-right: 10px;
+    padding-top: 50px;
+    display: inline-block;
+    background: url(../img/icon-lock.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 90px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.cell .icon-unlock {
+    margin-right: 10px;
+    padding-top: 50px;
+    display: inline-block;
+    background: url(../img/icon-unlock.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 90px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.cell .icon-add {
+    padding-top: 120px;
+    display: inline-block;
+    background: url(../img/icon-add.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 110px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/*
+.cell-rows .cell { background-color: #ff0000; }
+.cell-rows .cell:first-child { background-color: #ffff00; }
+.cell-rows .cell:last-child { background-color: #ffffff; }
+.cell-rows .cell:nth-child(4n-1) { background-color: #00ffff; }
+.cell-rows:first-child .cell { background-color: #00ff00; }
+.cell-rows:first-child .cell:first-child { background-color: #00ffff; }
+.cell-rows:first-child .cell:last-child { background-color: #0000ff; }
+.cell-rows:first-child .cell:nth-child(4n-1) { background-color: #ff00ff; }
+.cell-rows:last-child .cell { background-color: #f00000; }
+.cell-rows:last-child .cell:first-child { background-color: #00f000; }
+.cell-rows:last-child .cell:last-child { background-color: #00000f; }
+.cell-rows:last-child .cell:nth-child(4n-1) { background-color: #00f00f; }
+*/
