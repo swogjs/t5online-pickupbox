@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html, body {
@@ -110,6 +111,7 @@ html, body {
     border-radius: 10px;
     border: solid 2px #fff;
 }
+
 .cell .cell-layout .no-bg {
     position: absolute;
     top: -30px; left: -30px;
@@ -189,6 +191,7 @@ html, body {
     width: 110px;
     line-height: 20px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 /*
@@ -205,3 +208,143 @@ html, body {
 .cell-rows:last-child .cell:last-child { background-color: #00000f; }
 .cell-rows:last-child .cell:nth-child(4n-1) { background-color: #00f00f; }
 */
+
+
+
+
+
+
+.popup-dim {
+    position: fixed;
+    left:0; top:0; right: 0; bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 100;
+}
+.popup-section {
+    position: fixed;
+    left:0; top:0; right: 0; bottom: 0;
+    z-index: 101;
+}
+.popup-form {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+}
+.popup-form > .layout {
+    width: 50%;
+    border:solid 3px #454954;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.popup-form header {
+    height: 76px;
+    line-height: 76px;      
+    font-size: 36px;
+    background-color: #454954;
+    color: #fff;
+    text-align: center;            
+}
+.popup-form header .title {
+    position: relative;
+    overflow: hidden;
+}
+.popup-form header .title em {
+    height: 76px;
+    line-height: 76px;      
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+}
+.popup-form header .no-bg {
+    position: absolute;
+    top: -75px; left: -65px;
+    width: 160px;
+    height: 160px;
+    background-color: #a0549f; 
+    border-radius: 160px;
+    z-index: 100;
+}
+.popup-form header .no {
+    position: absolute;
+    width: 60px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 36px;
+    color: #fff;
+    z-index: 101;
+    text-align: center;
+    font-weight: bold;
+}
+.popup-form header .title .btn-close {
+    position: absolute;
+    right: 25px; top: 20px;
+
+    width: 38px;
+    height: 38px;
+    background: transparent url(../img/btn-popup-close.png) no-repeat center center;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.popup-form section.pop-contents {
+    height: 400px;
+}
+.popup-form section.pop-contents .order-list {
+    padding: 0 30px;
+}
+.popup-form section.pop-contents .order-list li {
+    border-bottom: solid 1px #dadbdd;
+}
+.popup-form section.pop-contents .order-list li:first-child {
+    border-top: solid 1px #dadbdd;
+}
+.popup-form section.pop-contents .order-list li p {
+    position: relative;
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+}
+.popup-form section.pop-contents .order-list li p .count {
+    position: absolute;
+    top: 0; right: 0;
+}
+
+.popup-form footer {
+    height: 80px; 
+    padding-bottom: 10px;
+}
+.popup-form footer .action-button {    
+    display: flex;         
+    height: 100%;
+    flex: 1 1 1;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.popup-form footer .action-button button {
+    background: #454954;
+    height: 100%;
+    width: 33.3333%;
+    margin: 0 5px 0px 5px;
+    font-size: 30px;
+    color: #fff;
+    border-width: 0;
+    border-radius: 5px;;
+}
+.popup-form footer .action-button button:first-child {
+    margin-left: 10px;
+}
+.popup-form footer .action-button button:last-child {
+    margin-right: 10px;
+}
+.popup-form footer .action-button button.btn-recall {
+    background: #4573ac;
+}
+.popup-form footer .action-button button.btn-ok {
+    background: #6daa31;
+}
+.popup-form footer .action-button button.btn-cancel {
+    background: #454954;
+}

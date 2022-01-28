@@ -8,6 +8,13 @@
     <title>Pickupbox</title>
 
     <link rel="stylesheet" href="../css/main.css" >
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+
+    <style>
+    </style>
+
 </head>
 
 <body>
@@ -54,7 +61,7 @@
                         <div class="no-bg"></div>
                         <p class="no">03</p>
                         <div class="status">
-                            <span class="icon-add">주문 추가</span>
+                            <span class="icon-add bind-add-order">주문 추가</span>
                         </div>
                     </div>
                 </div>
@@ -149,6 +156,62 @@
        
 
     </div>
+
+
+
+    <div class="popup-order">
+
+        <div class="popup">
+            <div class="popup-dim"></div>
+            <div class="popup-section">
+                <div class="popup-form">
+                    <div class="layout">                        
+                        <header>
+                            <div class="title">
+                                <div class="no-bg"></div>
+                                <p class="no">01</p>
+                                주문번호<em>157</em>
+                                <button type="button" class="btn-close bind-button-close"></button>
+                            </div>
+                        </header>
+                        <section class="pop-contents">
+
+                                <ul class="order-list">
+                                    <li>
+                                        <p class="order-item">
+                                            아이시스
+                                            <span class="count">1</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="order-item">
+                                            칠리치즈핫도그
+                                            <span class="count">1</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="order-item">
+                                            포토환타(M)
+                                            <span class="count">2</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            
+                        </section>
+                        <footer>
+                            <div class="action-button">
+                                <button type="button" class="btn-recall">재호출</button>
+                                <button type="button" class="btn-ok">완료</button>
+                                <button type="button" class="btn-cancel">취소</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 </body>
 
