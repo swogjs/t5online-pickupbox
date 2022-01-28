@@ -237,7 +237,61 @@ html, body {
     border:solid 3px #454954;
     border-radius: 5px;
     background-color: #fff;
+    
+    position: relative;
 }
+
+.popup-form > .layout .right-status {
+    position: absolute;
+    top: 0; right: -110px;
+}
+.popup-form > .layout .right-status .status-box {
+    position: relative;
+    width: 90px;
+    background-color: #fff;
+    text-align: center;
+    border:solid 3px #454954;
+    border-radius: 5px;
+}
+.popup-form > .layout .right-status .status-box .arr {
+    position: absolute;
+    top: 15px; left: -15px;
+    width: 22px;
+    height: 42px;
+    background: url(../img/popup-arr.png) no-repeat right center;
+}
+
+.popup-form > .layout .right-status .status-box .title {
+    padding: 6px 10px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #454954;
+}
+
+.popup-form > .layout .right-status .status-box .status {
+    padding: 20px 10px 10px 10px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #fff;
+}
+
+.popup-form > .layout .right-status .status-box .status .icon-lock {
+    margin-right: 10px;
+    padding-top: 50px;
+    display: inline-block;
+    background: url(../img/icon-lock.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333333;
+}
+
+
+
+
 .popup-form header {
     height: 76px;
     line-height: 76px;      
