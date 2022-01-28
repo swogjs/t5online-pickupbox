@@ -11,33 +11,75 @@ html, body {
 }
 
 .wrapper {
-    background-color: blue;
     height: 100vh;
 }
 .wrapper header {
-    background-color: green;
-    height: 80px;
+    background-color: #fff;
+    height: 60px;
     overflow: hidden;
 }
+
+.wrapper .header__top {
+    position: relative;
+}
+.wrapper .header__top_left {
+    position: absolute;
+    left: 30px; top: 15px;
+}
+.wrapper .header__top_left .date {
+    padding-left: 45px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    background: url(../img/icon-menu.png) no-repeat left center;
+    color: #333333;
+}
+
+.wrapper .header__top_center {
+    text-align: center;
+    padding-top: 15px;
+}
+.wrapper .header__top_center p {
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #333333;
+    vertical-align: top;
+}
+.wrapper .header__top_center p em {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 52px;
+    height: 26px;
+    background: url(../img/icon-logo.png) no-repeat left center;
+}
+
+.wrapper .header__top_right {
+    position: absolute;
+    top: 15px; right: 30px;
+}
+.wrapper .header__top_right .time {    
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    background: url(../img/icon-clock.png) no-repeat left center;
+    color: #333333;
+    text-align: right;
+    width: 90px;
+}
+
 .wrapper main {
     background-color: yellow;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
 }
 
 .cell-rows {
     height: 33.33333%;
-    background-color: red;
-    
     display: flex;         
     flex: 1 1 1 1;
     justify-content: center; 
     align-items: center;   
-}
-.cell-rows:first-child {
-    background-color: blue;
-}
-.cell-rows:last-child {
-    background-color: yellow;
 }
 
 .cell {
@@ -47,32 +89,45 @@ html, body {
     padding: 10px;
 }
 
+.cell-rows:first-child .cell {
+    padding-top: 20px;
+}
+.cell-rows .cell:first-child {
+    padding-left: 30px;
+}
+.cell-rows .cell:last-child {
+    padding-right: 30px;
+}
+.cell-rows:last-child .cell {
+    padding-bottom: 20px;
+}
+
 .cell .cell-layout {
     position: relative;
     height: 100%;
     overflow: hidden;
     background-color: #fff;
     border-radius: 10px;
+    border: solid 2px #fff;
 }
 .cell .cell-layout .no-bg {
     position: absolute;
-    top: -40px; left: -40px;
-    width: 120px;
-    height: 120px;
+    top: -30px; left: -30px;
+    width: 90px;
+    height: 90px;
     background-color: #454954;
-    border-radius: 120px;
+    border-radius: 90px;
     z-index: 100;
 }
-.cell.on .no-bg {
-    background-color: #a0549f;
+.cell.on .no-bg { 
+    background-color: #a0549f; 
 }
-
 .cell .cell-layout .no {
     position: absolute;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
     color: #fff;
     z-index: 101;
     text-align: center;
@@ -80,14 +135,20 @@ html, body {
 }
 
 .cell .order-no {
-    margin-top: 50px;
+    margin-top: 45px;
     text-align: center;
-    line-height: 120px;
-    font-size: 120px;
+    line-height: 70px;
+    font-size: 70px;
 }
 
 .cell .status {
     text-align: center;
+    margin-top: 45px;
+}
+
+.cell.on .status {
+    text-align: center;
+    margin-top: 0;
 }
 
 .cell .icon-time {
@@ -96,8 +157,8 @@ html, body {
     background: url(../img/icon-box.png) no-repeat top center;            
     box-sizing: border-box;
     width: 90px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 18px;
 }
 .cell .icon-lock {
     margin-right: 10px;
@@ -106,8 +167,8 @@ html, body {
     background: url(../img/icon-lock.png) no-repeat top center;            
     box-sizing: border-box;
     width: 90px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 18px;
 }
 .cell .icon-unlock {
     margin-right: 10px;
@@ -116,8 +177,8 @@ html, body {
     background: url(../img/icon-unlock.png) no-repeat top center;            
     box-sizing: border-box;
     width: 90px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 .cell .icon-add {
@@ -126,8 +187,8 @@ html, body {
     background: url(../img/icon-add.png) no-repeat top center;            
     box-sizing: border-box;
     width: 110px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 /*
