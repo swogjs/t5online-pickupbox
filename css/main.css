@@ -385,7 +385,8 @@ html, body {
     font-size: 30px;
     color: #fff;
     border-width: 0;
-    border-radius: 5px;;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .popup-form footer .action-button button:first-child {
     margin-left: 10px;
