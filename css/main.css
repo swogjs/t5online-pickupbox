@@ -176,7 +176,7 @@ html, body {
     margin-right: 10px;
     padding-top: 50px;
     display: inline-block;
-    background: url(../img/icon-unlock.png) no-repeat top center;            
+    background: url(../img/icon-unlock.png) no-repeat top center;
     box-sizing: border-box;
     width: 90px;
     line-height: 20px;
@@ -244,7 +244,12 @@ html, body {
 .popup-form > .layout .right-status {
     position: absolute;
     top: 0; right: -110px;
+    display: none;
 }
+.popup-form > .layout .right-status.show {
+    display: block;
+}
+
 .popup-form > .layout .right-status .status-box {
     position: relative;
     width: 90px;
@@ -289,6 +294,17 @@ html, body {
     color: #333333;
 }
 
+.popup-form > .layout .right-status .status-box .status .icon-unlock {
+    margin-right: 10px;
+    padding-top: 50px;
+    display: inline-block;
+    background: url(../img/icon-unlock.png) no-repeat top center;            
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333333;
+}
 
 
 
