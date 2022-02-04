@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickupbox</title>
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css" >
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
 
     <style>
     </style>
@@ -22,15 +21,20 @@
 
     <div class="wrapper">
 
-        <header class="header__top">
-            <div class="header__top_left">
+        <header class="dropdown header__top">
+            <div class=" header__top_left">
+                <a class="btn menu dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">메뉴</a>
                 <p class="date">2021년 12월 15일</p>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item box-mapping-history-list" href="#">박스 매핑 이력 확인</a>
+                    <a class="dropdown-item system config" href="#">시스템 설정</a>
+                </div>
             </div>
             <div class="header__top_center">
                 <p><em></em>Media4th &amp; Company</p>
             </div>
             <div class="header__top_right">
-                <p class="time">09:36</span>
+                <p class="time">09:36</p>
             </div>
         </header>
 
@@ -226,7 +230,10 @@
 
     </div>
 
-
+    <script src="../jslib/jquery-3.3.1.slim.min.js"></script>
+    <script src="../jslib/popper.min.js"></script>
+    <script src="../jslib/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
